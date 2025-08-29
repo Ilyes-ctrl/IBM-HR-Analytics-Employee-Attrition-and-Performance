@@ -91,3 +91,24 @@ under 30, with a particular focus on the experience and needs of young female em
 ![fourthVisual](/assets/four.png)
 
 *This clustered column chart represents the employee attrition rate across different age brackets, segmented by gender, to identify demographic trends in turnover.*
+
+## 5. Which job roles experience the most attrition, and how do they compare across departments?
+This analysis was conducted to pinpoint the specific job roles with the highest turnover and to understand their distribution across the company's primary departments. To ensure an accurate and comparable metric, a DAX measure was crafted to calculate the attrition rate for each job role—the percentage of employees in that role who left the company. This is superior to a simple count of leavers, as it accounts for the total number of employees in each role, preventing larger groups from appearing disproportionately problematic. The measure being: 
+`Attrition Rate by Job Role = 
+DIVIDE(
+    CALCULATE(COUNTROWS('IBM HR Analytics Employee Attri'), 'IBM HR Analytics Employee Attri'[Attrition] = "Yes"),
+    CALCULATE(COUNTROWS('IBM HR Analytics Employee Attri'))
+)` 
+The results are sorted in descending order to immediately highlight the most critical roles, with a color legend applied to segment each bar by its respective department.
+### Insights
+The data reveals a critical concentration of attrition in individual contributor and highly specialized roles. Sales Representative stands out as the role with the most
+severe attrition crisis, with a rate of 40%, significantly higher than all others. This is followed by Laboratory Technician and Human Resources roles. The chart provides
+crucial context by department, showing that while Sales is a clear hotspot, Research & Development also faces significant pressure due to the volume of technical roles
+experiencing turnover. A key detail to note is the Manager role, which appears twice; this indicates that managers in Sales have a slightly higher attrition rate than those
+in R&D, a nuance that would be lost without departmental segmentation. For recruiters and department heads, this analysis moves beyond general department-level data to
+identify the exact positions that are retention risks. It suggests a need for targeted interventions, such as reviewing compensation plans for Sales Representatives, career
+pathing for Laboratory Technicians, and workload assessments for HR personnel, all tailored to the specific challenges within each department.
+
+![fifthVisual](/assets/five.png)
+
+*This horizontal bar chart represents the attrition rate for each job role within the organization, color-coded by department to contextualize the operational areas most affected.*
