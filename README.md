@@ -69,3 +69,25 @@ could be a retention risk factor.
 ![thirdVisual](/assets/three.png)
 
 *This bar chart represents the relationship between overtime status and employee attrition.*
+
+## 4. Which age groups are more likely to leave, and does gender make a difference?
+The goal of this analysis was to identify which age demographics are most vulnerable to attrition and to determine if this trend is uniform across genders. To achieve this,
+a calculated measure was engineered to accurately represent the Attrition Rate-the percentage of employees who left within each specific age and gender cohort—rather than
+using raw counts. This measure normalizes the data, ensuring a fair comparison between groups of different sizes: 
+`Attrition Rate by Gender = 
+DIVIDE(
+    COUNTROWS(FILTER('IBM HR Analytics Employee Attri', 'IBM HR Analytics Employee Attri'[Attrition] = "Yes")),
+    COUNTROWS('IBM HR Analytics Employee Attri')
+)`  
+The result is visualized in a clustered column chart with `Age` on the x-axis, `Attrition Rate by Gender` on the y-axis, and `Gender` providing the key segmentation.
+### Insights
+The data reveals a clear and sharp inverse relationship between age and attrition rate, with the youngest employees (ages 18-24) exhibiting a critically high turnover rate
+of over 75%. This rate declines precipitously as age increases, effectively plateauing for employees over 40. This indicates that early-career employees are a high-risk
+group, likely due to factors like role exploration, lower job satisfaction, or competitive job hopping. Furthermore, the analysis uncovers a significant gender disparity
+within these younger cohorts: young women are leaving at a markedly higher rate than their male counterparts. For recruiters and HR business partners, this is a crucial
+insight. It suggests that retention strategies—such as enhanced onboarding, career pathing, mentorship programs, and engagement surveys—should be prioritized for employees
+under 30, with a particular focus on the experience and needs of young female employees to address this specific gap.
+
+![fourthVisual](/assets/four.png)
+
+*This clustered column chart represents the employee attrition rate across different age brackets, segmented by gender, to identify demographic trends in turnover.*
