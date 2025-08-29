@@ -9,9 +9,14 @@ to support HR decision-making.
 - **📑 Dataset (Excel):** [ibmhr.xlsx](ibmhr.xlsx)
 - **🛠️ Power BI Template (PBIT):** [ibmhr.pbit](ibmhr.pbit)
 # Background
-### The questions I wanted to answer through this project were:
+### The Questions I Wanted to Answer Through This Project Were:
 1. Which departments have the highest employee attrition?
 2. Does gender play a role in employee attrition?
 3. Is there a relationship between working overtime and leaving the company?
 4. Which age groups are more likely to leave, and does gender make a difference?
 5. Which job roles experience the most attrition, and how do they compare across departments?
+# Tools I Used
+- **📂 Kaggle:** Source of the IBM HR Analytics Employee Attrition & Performance dataset
+- **📝 Excel:** Initial data exploration and cleaning
+- **⚡ Power BI:** Data transformation, KPI creation, and interactive dashboard design
+- **💻 GitHub:** Documentation and sharing the project
