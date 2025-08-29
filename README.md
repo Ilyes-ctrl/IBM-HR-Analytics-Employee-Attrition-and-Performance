@@ -57,8 +57,8 @@ significantly, and gender alone is not the strongest explanatory factor — othe
 *This donut chart represents the distribution of employees who left the company, segmented by gender.*
 
 ## 3. Is there a relationship between working overtime and leaving the company?
-In order to determine whether working overtime is linked to a higher likelihood of leaving the company, I created this visualization with Overtime (Yes/No) placed on the
-X-axis and a custom DAX measure, Attrition Yes Count, mentionned previously on the second question.
+In order to determine whether working overtime is linked to a higher likelihood of leaving the company, I created this visualization with `Overtime` (Yes/No) placed on the
+X-axis and a custom DAX measure, `Attrition Yes Count`, mentionned previously on the second question.
 ### Insights
 The results reveal a notable difference: employees working overtime account for 127 attrition cases, compared to 110 cases among those not working overtime. Although the
 difference is not overwhelmingly large, the trend suggests that overtime may contribute to higher turnover, possibly due to increased workload, stress, or reduced work-life
