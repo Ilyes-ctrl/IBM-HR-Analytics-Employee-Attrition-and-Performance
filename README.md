@@ -112,3 +112,12 @@ pathing for Laboratory Technicians, and workload assessments for HR personnel, a
 ![fifthVisual](/assets/five.png)
 
 *This horizontal bar chart represents the attrition rate for each job role within the organization, color-coded by department to contextualize the operational areas most affected.*
+
+# What I learned
+- **🔍 Mastering DAX for Accurate Metrics:** I learned to move beyond simple counts and engineer precise DAX measures to calculate normalized rates, such as department and job-role-specific attrition rates. This was critical for ensuring fair comparisons and avoiding misleading conclusions from raw data, solidifying my understanding of how to build accurate and reliable KPIs in Power BI.
+
+- **🎯 The Art of Targeted Analysis:** This project taught me how to drill down from high-level trends (like department attrition) to specific, actionable insights (like the 40% attrition rate for Sales Representatives). I learned the analytical skill of zooming in and out of data to identify not just that a problem exists, but exactly where it is most acute, which is essential for proposing effective solutions.
+
+- **👥 Designing for Contextual Storytelling:** I advanced my visualization skills by learning how to use segmentation and legend encoding effectively. By incorporating fields like Department and Gender into charts, I provided crucial context that transformed a simple bar chart into a multi-layered story, revealing nuances like the differing attrition rates for managers in Sales versus R&D.
+
+- **⚖️ Navigating the Pitfalls of Class Imbalance:** I gained hands-on experience with a classic imbalanced dataset where the majority class (employees who stayed) vastly outweighed the minority (those who left). This taught me the importance of choosing the right metrics (like attrition rate) over default accuracy to build a meaningful analysis that truly captures the phenomenon in question.
