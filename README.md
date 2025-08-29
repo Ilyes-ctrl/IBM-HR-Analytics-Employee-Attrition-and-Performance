@@ -38,3 +38,20 @@ as it can directly impact revenue generation and client relationships, making it
 ![firstVisual](/assets/one.png)
 
 *This bar chart represents employee attrition rates across different departments.*
+
+## 2. Does gender play a role in employee attrition?
+In order to figure out whether gender plays a role in employee attrition, I created this donut chart with `Gender` in the legend and a DAX measure for `Attrition Yes Count` in the values: `Attrition Yes Count = CALCULATE(
+    COUNTROWS('IBM HR Analytics Employee Attri'),
+    'IBM HR Analytics Employee Attri'[Attrition] = "Yes")` 
+I chose this measure instead of using the raw `Attrition` column because it allows me to filter and count only the employees who actually left, providing a clear breakdown
+of attrition numbers per gender. This way, the chart directly shows the proportion of leavers rather than including employees who stayed, making the visualization more
+targeted and easier to interpret.
+### Insights
+The results show that 150 male employees left (63.29%) compared to 87 female employees (36.71%). While this indicates that a larger share of attrition cases comes from men,
+it’s important to note that this chart reflects absolute counts of attrition, not normalized attrition rates by gender. Since the company has more male employees overall,
+this difference may simply reflect workforce distribution rather than a higher likelihood of men leaving. The key takeaway is that attrition affects both genders
+significantly, and gender alone is not the strongest explanatory factor — other aspects such as department, overtime, and age may offer more actionable insights.
+
+![secondVisual](/assets/two.png)
+
+*This donut chart represents the distribution of employees who left the company, segmented by gender.*
